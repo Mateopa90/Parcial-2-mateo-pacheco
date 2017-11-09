@@ -1,5 +1,7 @@
 package parcial_2;
 
+
+
 public class Persona {
     private String nombre;
     private int documento;
@@ -53,11 +55,46 @@ public class Persona {
         this.avalPersona = avalPersona;
     }
     
-    public boolean evaluarPersona (){
-        boolean aprobacion = false;
+    public boolean Evaluacion_Inquilino (){
+        boolean EI = false;
+        
         if (nomina == true || avalBancario == true || contratoTrabajo == true || avalPersona == true){
-            aprobacion = true;
+            EI = true;
         }
-        return aprobacion;
+        return EI;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getDocumento() {
+        return documento;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public boolean isNomina() {
+        return nomina;
+    }
+
+    public boolean isAvalBancario() {
+        return avalBancario;
+    }
+
+    public boolean isContratoTrabajo() {
+        return contratoTrabajo;
+    }
+
+    public boolean isAvalPersona() {
+        return avalPersona;
+    }
+    
+    
 }
