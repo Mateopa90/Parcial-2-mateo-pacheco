@@ -11,8 +11,16 @@ public class LocalComercial extends Local{
         this.viaPrincipal = viaPrincipal;
     }
     
+    @Override
     public String darInformacion(){
-        String info = "Nombre: " + this.;
-    }
+        String info = "Nombre del Barrio: " + this.nombreBarrio + "\n" + 
+                "Estrato: " + this.estrato + "\n" + 
+                "Valor Arriendo: " + this.valorArriendo + "\n" + 
+                "Área construida: " + this.areaConstruida + "\n" + 
+                "Disponible: " + this.disponible + "\n" + 
+                "Se encuentra en vía Principal: " + this.viaPrincipal + "\n" + 
+                "Descripción: " + this.descripcion;
+        return info;
+    } 
 
 }    
