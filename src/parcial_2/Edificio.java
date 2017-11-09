@@ -3,7 +3,6 @@ package parcial_2;
 import java.util.ArrayList;
 
 
-
 public class Edificio extends Inmueble{
 
 
@@ -34,7 +33,13 @@ public class Edificio extends Inmueble{
     
     @Override
     public String Dar_Informacion() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        String info = "Nombre del Barrio: " + this.Nombre_Barrio + "\n" + 
+                "Estrato: " + this.Estrato + "\n" + 
+                "Valor Arriendo: " + this.Valor_Arriendo + "\n" + 
+                "Área construida: " + this.Area_Construida + "\n" + 
+                "Disponible: " + this.Arrendado + "\n" + 
+                "Info. del Propietario: " + this.Propietario;
+        return info;
     }
 
     public String getPropietario() {
@@ -44,6 +49,5 @@ public class Edificio extends Inmueble{
     public void setPropietario(String Propietario) {
         this.Propietario = Propietario;
     }
-    
-    
+
 }

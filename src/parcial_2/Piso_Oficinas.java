@@ -23,7 +23,13 @@ public class Piso_Oficinas extends Inmueble{
     
     @Override
     public String Dar_Informacion() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+         String info = "Nombre del Barrio: " + this.Nombre_Barrio + "\n" + 
+                "Estrato: " + this.Estrato + "\n" + 
+                "Valor Arriendo: " + this.Valor_Arriendo + "\n" + 
+                "Área construida: " + this.Area_Construida + "\n" + 
+                "Disponible: " + this.Arrendado + "\n" + 
+                "Número de Oficinas: " + this.Num_Oficinas;
+        return info;
     }
 
     public int getNum_Oficinas() {
@@ -41,7 +47,6 @@ public class Piso_Oficinas extends Inmueble{
     public void setArea(double Area) {
         this.Area = Area;
     }
-    
-    
+
     
 }

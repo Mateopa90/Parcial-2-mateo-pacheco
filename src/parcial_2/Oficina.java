@@ -13,7 +13,13 @@ public class Oficina extends Local{
 
     @Override
     public String Dar_Informacion() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        String info = "Nombre del Barrio: " + this.Nombre_Barrio + "\n" + 
+                "Estrato: " + this.Estrato + "\n" + 
+                "Valor Arriendo: " + this.Valor_Arriendo + "\n" + 
+                "Área construida: " + this.Area_Construida + "\n" + 
+                "Disponible: " + this.Arrendado + "\n" + 
+                "Tipo de Oficina: " + this.Tipo_Oficinas;
+        return info;
     }
 
     public String getTipo_Oficinas() {
@@ -23,6 +29,5 @@ public class Oficina extends Local{
     public void setTipo_Oficinas(String Tipo_Oficinas) {
         this.Tipo_Oficinas = Tipo_Oficinas;
     }
-    
     
 }
