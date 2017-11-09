@@ -27,7 +27,7 @@ public class Edificio extends Inmueble{
         oficinas.add(o);
     }
     
-    public void addPiso(int numeroOficinas, double area, String nombreBarrio, int estrato, double valorArriendo, double areaConstruida, boolean disponible){
+    public void agregarPiso(int numeroOficinas, double area, String nombreBarrio, int estrato, double valorArriendo, double areaConstruida, boolean disponible){
         Piso p = new Piso(numeroOficinas, area, nombreBarrio, estrato, valorArriendo, areaConstruida, disponible);
         pisos.add(p);
     }

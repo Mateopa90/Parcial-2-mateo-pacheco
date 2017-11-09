@@ -26,7 +26,15 @@ public class FincaRaiz {
         inventario.put("Local Comercial", l);
     }
     
+    public void agregarOficina(String tipoOficina, String nombreBarrio, int estrato, double valorArriendo, double areaConstruida, boolean disponible){
+        Oficina o = new Oficina(tipoOficina, nombreBarrio, estrato, valorArriendo, areaConstruida, disponible);
+        inventario.put("Oficina", o);
+    }
     
+    public void agregarPiso(int numeroOficinas, double area, String nombreBarrio, int estrato, double valorArriendo, double areaConstruida, boolean disponible){
+        Piso p = new Piso(numeroOficinas, area, nombreBarrio, estrato, valorArriendo, areaConstruida, disponible);
+        inventario.put("Piso", p);
+    }
     
     
 }
